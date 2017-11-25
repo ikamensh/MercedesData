@@ -1,0 +1,10 @@
+In order to run the app, you first need some packages:
+- pip3             <-  sudo apt-get install python3-pip
+- pandas      <- pip3 install pandas  -  see more on how to install here (https://pandas.pydata.org/pandas-docs/stable/install.html)
+- scikit           <- pip3 install -U scikit-learn  - see more here (http://scikit-learn.org/stable/install.html)
+- scipy            <- pip3 install --user numpy scipy matplotlib ipython jupyter pandas sympy nose   -  see more on how to install here (https://www.scipy.org/install.html)
+- catboost   <- pip3 install catboost  - see more on how to install it here (https://tech.yandex.com/catboost/doc/dg/concepts/python-installation-docpage/)
+
+Nice to have:
+- pycharm   <- tutorial on how to install on Linux here (https://itsfoss.com/install-pycharm-ubuntu/)
+                         <- to run it go to its install location (default is /home/liviu/.local/share/umake/ide/pycharm/bin) and run  pycharm.sh
