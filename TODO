@@ -1,7 +1,7 @@
 TODO:
 - add a visual way to view machine learning results
-- create a module that runs the classifier on part of the data, then computes its score on the leftover data
-
+- create a module that runs the classifier on part of the data, then computes its score on the leftover data, 
+	organize it as a module that runs a given classifier and only prints its mean_squared_error
 
 DONE:
 
