@@ -17,7 +17,6 @@ model.fit(x_train_split, y_train_split, eval_set=eval_set, verbose=False)
 # make predictions for test data
 
 y_pred = model.predict(x_val)
-
 print(mean_squared_error(y_val,y_pred))
 
 y_test = model.predict(x_test)

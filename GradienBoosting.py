@@ -15,14 +15,10 @@ model.fit(x_train,y_train)
 #Model validation
 def format_output(prediction):
     prediction = pd.DataFrame(prediction)
-    prediction.to_csv('submission/submission_grad_class1.csv')
     prediction.columns= ['y']
-    prediction.to_csv('submission/submission_grad_class2.csv')
     prediction['ID'] = sample_sub.index.values
-    prediction.to_csv('submission/submission_grad_class3.csv')
     #Read ID from sample submission
     prediction.set_index('ID',inplace=True)
-    prediction.to_csv('submission/submission_grad_class4.csv')
     #Save csv for submission
     return prediction
 
