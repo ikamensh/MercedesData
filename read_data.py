@@ -23,13 +23,13 @@ features_mlp_test.index = x_test.index
 
 x_train_aug = pd.merge(x_train, features_mlp_train, left_index=True, right_index=True)
 x_test_aug = pd.merge(x_test, features_mlp_test, left_index=True, right_index=True)
-print('Column amount: {}'.format(len(x_train_aug.columns)))
+
 #Filter for non zero standard deviation
 x_train_aug_std = x_train_aug.std()
 x_train_aug_std_fil = x_train_aug_std[x_train_aug_std != 0.0]
 x_train_aug = x_train_aug.filter(x_train_aug_std_fil.index.values)
 x_test_aug = x_test_aug.filter(x_train_aug_std_fil.index.values)
-print('Column amount: {}'.format(len(x_train_aug.columns)))
+
 #Filter for correlation to label
 ds_corr = x_train_aug.corrwith(y_train)
 ds_corr = abs(ds_corr)
@@ -37,4 +37,3 @@ ds_corr = abs(ds_corr)
 ds_corr_fil = ds_corr[ds_corr > _corr_criteria]
 x_train_aug = x_train_aug.filter(ds_corr_fil.index.values)
 x_test_aug = x_test_aug.filter(ds_corr_fil.index.values)
-print('Column amount: {}'.format(len(x_train_aug.columns)))
