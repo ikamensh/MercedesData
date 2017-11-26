@@ -1,2 +1,17 @@
-a) How to run the program:
+1) About
+
+This project is a solution to the Kaggel Mercedes contest (https://www.kaggle.com/c/mercedes-benz-greener-manufacturing).
+
+Its task is to reduce the time it takes to test a new car. The data is a .csv file containing, on each line,
+the test results for that given car. It is a multi dimensional data. The y column is the most important one,
+it contains the total time to run all tests for that given car.
+
+Our task: build (from the training data) a classifier, that for a new entry will be able to predict the value of y column.
+
+Our solution: we have writter several classifiers to do this task, so far with average results.
+
+
+2) How to run the program
+
+- first you must install all packages in the PREREQUISITES files
 - data is already read, simply run "python catboost_classification.py"
