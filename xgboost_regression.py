@@ -1,7 +1,7 @@
 from sklearn.metrics import mean_squared_error
 
 from GradienBoosting import format_output
-from read_data import x_train_split, x_val, y_train_split, y_val, x_test
+from read_data import x_train_split, x_val, y_train_split, y_val, x_test, x_train_aug, x_test_aug
 
 
 
