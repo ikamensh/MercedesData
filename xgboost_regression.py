@@ -26,6 +26,6 @@ print(mean_squared_error(y_val,y_pred))
 
 y_test = model.predict(x_test)
 y_test = format_output(y_test)
-y_test.to_csv("submission/result_catboost.csv")
+y_test.to_csv("submission/result_xgboost.csv")
 
 
