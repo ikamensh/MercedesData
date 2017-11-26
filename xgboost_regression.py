@@ -12,7 +12,8 @@ from xgboost import XGBRegressor
 model = XGBRegressor(max_depth=5,
                       learning_rate=0.02,
                       objective='reg:linear',
-                      n_estimators=300)
+                      n_estimators=300,
+                     booster="gblinear")
 
 print(model.get_params().keys())
 
