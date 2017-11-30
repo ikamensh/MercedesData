@@ -4,6 +4,7 @@ from GradienBoosting import format_output
 from read_data import y_train
 from read_data import x_train_auto, x_test_auto
 from sklearn.model_selection import train_test_split
+from sklearn.feature_selection import from_model
 from utility.mean_squared_error import compute_mean_squared_error
 
 x_train, x_val, y_train, y_val = train_test_split(x_train_auto, y_train, test_size=0.25)
